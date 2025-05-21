@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+:root {
+  font-family: "Alice", serif;
+  line-height: 150%;
+  color: #573A37;
+}
+
+body {
+  background-image: url(assets/bg-image.png);
+  background-color: #573824;
+  background-size: cover;
+}
+
+
+
+.container {
+  background-color: #F0E8C2;
+  width: 800px;
+  border-radius: 24px;
+  box-sizing: border-box;
+  padding: 24px;
+  margin: 48px auto;
+}
+
+.main-image{ 
+  border-radius: 16px;
+  margin-bottom: 0px;
+}
+
+main {
+  padding: 24px;
+}
+
+h1{
+  font-size: 40px;
+  line-height: 140%;
+  color: #291B1A;
+  margin-bottom: 4px;
+}
+
+h2 {
+  font-size: 24px;
+  color: #291B1A;
+  margin-bottom: 4px;
+}
+
+
+.middle {
+  margin-top: 24px;
+}
+
+.ingredientes {
+  padding-left: 20px;
+}
+
+
+footer{
+  margin-top: 24px;
+}
+
+h3{
+  margin-bottom: 4px;
+}
+
+
+h1, h2, h3 {
+  font-weight: 400;
+}
