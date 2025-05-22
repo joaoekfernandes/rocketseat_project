@@ -47,7 +47,33 @@ h1, h2, h3 {
   font: inherit;
 }
 
+img {
+  max-width: 100%; /* relativo a caixa que voce esta inserida, dona caixa!*/
+}
 
+/*header container */
+.container {
+  max-width: 1280px;
+  padding-inline: 32px;
+  margin-inline: auto;
+}
+
+main {
+  margin-top: 40px;
+}
+
+/* aplicando mesma altura e tamanho das imagens */
+
+#featured {
+  img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+
+
+/* UTILITY (classes pre-defined that repeat throughout the HTML)*/
 .grid {
   display: grid;
 }
@@ -56,17 +82,31 @@ h1, h2, h3 {
   grid-auto-flow: column;
 }
 
-
-.container {
-  max-width: 1280px;
-  padding-inline: 32px;
-  margin-inline: auto;
+.grid-flow-two {
+  grid-template-columns: repeat(2, 1fr);
 }
+
+.gap-sixteen {
+  gap: 16px;
+}
+
+
+
+
+
 
 
 /* HEADER */
 #primary {
   padding-block: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+header #primary div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 div:nth-child(2) {
@@ -85,4 +125,5 @@ div:nth-child(3) {
   padding-block: 14px;
   border: solid 1px var(--stroke-color);
   border-inline: none;
+  justify-content: space-between;
 }
