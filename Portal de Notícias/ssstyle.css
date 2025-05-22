@@ -1,3 +1,10 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
   --brand-color-light: #60A5FA;
   --brand-color-dark: #1D4ED8;
@@ -5,7 +12,7 @@
   --bg-color: #0F172A;
   --stroke-color: #1E293B;  
 
-  --text-color-primary: #F1F5F1;
+  --text-color-primary: #F1F5F9;
   --text-color-secondary: #CBD5E1;
 
   --font: "Roboto", sans-serif;
@@ -14,5 +21,9 @@
   --font-heading3: 800 24px/140% var(--font);
   --font-span: 800 14px/145% var(--font);
   --font-heading1: 400 14px/165% var(--font);
+}
 
+body {
+  color: var(--text-color-primary);
+  background-color: var(--bg-color);
 }
