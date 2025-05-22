@@ -22,6 +22,7 @@
   --font-span: 600 14px/145% var(--font-family);
   --font-sm-p: 400 14px/165% var(--font-family);
   --text: 400 16px/140% var(var(--font-family));
+  --font-tipo-video: 400 10px var(var(--font-family));
 }
 
 body {
@@ -62,14 +63,58 @@ main {
   margin-top: 40px;
 }
 
+
+.content-tag {
+  display: inline-block;
+  background-color: var(--brand-color-dark);
+  padding: 4px;
+  border-radius: 4px;
+  font: 500 10px/1.2 var(--font-family);
+  letter-spacing: 0.04em;
+  color: var(--text-color-primary);
+  box-shadow: 0px 4px 16px rgba(2,6,23,0.251);
+}
+
+
+
+
+
 /* aplicando mesma altura e tamanho das imagens */
 
 #featured {
   img {
     height: 100%;
     object-fit: cover;
+
+  }
+  .card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+    &::before {
+      content: "";
+      position: absolute;
+      inset:0;
+      top:50%;
+      background: linear-gradient(
+        180deg,
+        transparent 0%,
+        #020617 100%
+      );
+    }
+
+    figcaption {
+      position: absolute;
+      bottom: 0;
+      padding: 24px;
+    }
+
+    h2 {
+      margin-top: 8px;
+    }
   }
 }
+
 
 
 
@@ -88,6 +133,22 @@ main {
 
 .gap-sixteen {
   gap: 16px;
+}
+
+.text-2xl {
+  font: var(--font-h1);
+}
+
+.text-xl {
+  font: var(--font-h2);
+}
+
+.text-l {
+  font: var(--font-h3);
+}
+
+.text-sm {
+  font: var(--font-sm-p);
 }
 
 
