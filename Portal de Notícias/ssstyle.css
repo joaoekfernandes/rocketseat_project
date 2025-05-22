@@ -15,15 +15,74 @@
   --text-color-primary: #F1F5F9;
   --text-color-secondary: #CBD5E1;
 
-  --font: "Roboto", sans-serif;
-  --font-heading1: 800 24px/135% var(--font);
-  --font-heading2: 800 16px/140% var(--font);
-  --font-heading3: 800 24px/140% var(--font);
-  --font-span: 800 14px/145% var(--font);
-  --font-heading1: 400 14px/165% var(--font);
+  --font-family: 'Archivo', sans-serif;
+  --font-h1: 800 24px/135% var(--font-family);
+  --font-h2: 800 16px/140% var(--font-family);
+  --font-h3: 800 14px/140% var(--font-family);
+  --font-span: 600 14px/145% var(--font-family);
+  --font-sm-p: 400 14px/165% var(--font-family);
+  --text: 400 16px/140% var(var(--font-family));
 }
 
 body {
   color: var(--text-color-primary);
   background-color: var(--bg-color);
+  font: var(--text);
+  margin: auto;
+
+}
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+a:hover {
+  color: var(--brand-color-light);
+}
+
+h1, h2, h3 {
+  font: inherit;
+}
+
+
+.grid {
+  display: grid;
+}
+
+.grid-flow-col {
+  grid-auto-flow: column;
+}
+
+
+.container {
+  max-width: 1280px;
+  padding-inline: 32px;
+  margin-inline: auto;
+}
+
+
+/* HEADER */
+#primary {
+  padding-block: 20px;
+}
+
+div:nth-child(2) {
+  margin-inline: auto;
+}
+
+div:nth-child(3) {
+  justify-self: end;
+}
+
+
+
+/* SECONDARY PART */
+
+#secondary {
+  padding-block: 14px;
+  border: solid 1px var(--stroke-color);
+  border-inline: none;
 }
