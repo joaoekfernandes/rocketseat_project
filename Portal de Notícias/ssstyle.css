@@ -107,6 +107,10 @@ main {
       position: absolute;
       bottom: 0;
       padding: 24px;
+
+      &:has(.text-l) {
+        padding: 12px;
+      }
     }
 
     h2 {
