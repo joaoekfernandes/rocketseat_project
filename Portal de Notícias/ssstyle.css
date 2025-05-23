@@ -192,6 +192,10 @@ section header {
   gap: 16px;
 }
 
+.gap-threetwo {
+  gap: 32px;
+}
+
 .text-2xl {
   font: var(--font-h1);
 }
